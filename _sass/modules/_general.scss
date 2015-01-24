@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $c-base;
+  font-family: $f-family;
+  letter-spacing: -0.02em;
+  font-size: 1.6em;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  @include mq-large {
+    font-size: 1.8em;
+  }
+}
+
+a {
+  color: $c-blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $c-brand;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+ul, ol, menu, dir {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+pre {
+  margin: 0;
+}

@@ -1,0 +1,8 @@
+/* only use the site colors defined in $colors map */
+@function color($color-name) {
+    @if type-of(map-get($colors, $color-name)) == 'color' {
+        @return map-get($colors, $color-name);
+    } @else {
+        @error '#{$color-name} is not a color.';
+    }
+}
