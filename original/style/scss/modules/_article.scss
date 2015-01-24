@@ -1,0 +1,90 @@
+.post {
+  display: block;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+}
+
+.article-header {
+  padding: 2em 1em;
+  margin: 0 auto;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../images/photos/IMG_20130527_193919.jpg) top center no-repeat;
+    background-size: cover;
+  height: 75vh;
+
+  @extend %clearfix;
+
+  @include mq-large {
+    padding: 3.5em 1em;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 8vh;
+    font-weight: 300;
+    color: $c-white;
+
+    @include mq-medium {
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+
+    @include mq-large {
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+  }
+
+  .legenda {
+    color: $c-white;
+
+    @include mq-medium {
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+
+    @include mq-large {
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+
+    .tags {
+      text-transform: lowercase;
+    }
+
+    p {
+      margin: 0.5em 0 0;
+    }
+  }
+}
+
+.article-main {
+  max-width: $max-width;
+  margin: 0 auto 50px auto;
+
+  @include mq-large {
+    line-height: 1.8;
+  }
+
+  h2,
+  h3,
+  p,
+  ul,
+  ol {
+    margin: 20px;
+
+    @include mq-large {
+      margin: 20px 0;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  img {
+    width: 100%;
+  }
+}

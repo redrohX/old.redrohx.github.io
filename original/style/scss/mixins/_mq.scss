@@ -1,0 +1,17 @@
+@mixin mq-small {
+  @media (max-width: #{$w-medium - 1px})  {
+    @content;
+  }
+}
+
+@mixin mq-medium {
+  @media (min-width: #{$w-medium}) and (max-width: #{$w-large - 1px}) {
+    @content;
+  }
+}
+
+@mixin mq-large {
+  @media (min-width: #{$w-large}) {
+    @content;
+  }
+}
