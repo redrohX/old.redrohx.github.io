@@ -2,11 +2,15 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2015-01-24 11:01:14
-categories: front-end games music
+categories:
+  - front-end
+  - games
+  - music
 tags:
   - jekyll
   - frontend
   - goodluck
+image: /images/photos/IMG_20130527_193919.jpg
 ---
 ## First sub-header
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
@@ -21,6 +25,7 @@ Jekyll also offers powerful support for code snippets:
         @include clearfix;
         @extend %placeholder;
       }
+      
 </code></pre>
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
