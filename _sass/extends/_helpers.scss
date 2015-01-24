@@ -6,3 +6,13 @@
     clear: both;
   }
 }
+
+.is-hidden,
+%is-hidden {
+  display: none;
+}
+
+.is-visible,
+%is-visible {
+  display: block;
+}

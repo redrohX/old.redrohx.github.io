@@ -7,13 +7,16 @@
 .article-header {
   padding: 2em 1em;
   margin: 0 auto;
+  background: $c-brand;
 
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 75vh;
+  &.show-image {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 75vh;
+  }
 
   @extend %clearfix;
 
@@ -56,7 +59,7 @@
     }
 
     p {
-      margin: 0.5em 0 0;
+      margin: 0.5em 0;
     }
   }
 }
@@ -69,6 +72,7 @@
     line-height: 1.8;
   }
 
+  h1,
   h2,
   h3,
   p,
@@ -83,6 +87,11 @@
 
   p {
     text-align: justify;
+
+    > code {
+      background: lighten($c-base, 75%);
+      padding: 2px;
+    }
   }
 
   img {

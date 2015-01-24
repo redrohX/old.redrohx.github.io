@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  
+
   .site-title {
     margin: 0;
     padding: 10px;
@@ -19,6 +19,7 @@
   }
 
   .nav-wrapper {
+    @extend %is-hidden;
     position: fixed;
     width: 100%;
     bottom: 0;
