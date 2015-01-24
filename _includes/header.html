@@ -3,13 +3,12 @@
   <div class="nav-wrapper">
     <nav>
       <ul class="site-nav">
-        {% for page in site.pages %}
-          {% if page.title %}
-            <li class="item"><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-home fa-lg"></i><span>{{ page.title }}</span></a></li>
-            <!-- <li class="item is-active"><a href="#"><i class="fa fa-code fa-lg"></i><span>Frontend</span></a></li>
-            <li class="item"><a href="#"><i class="fa fa-gamepad fa-lg"></i><span>Games</span></a></li>
-            <li class="item"><a href="#"><i class="fa fa-music fa-lg"></i><span>Music</span></a></li> -->
-          {% endif %}
+        {% for category in site.categories %}
+          <li class="item"><a href="{{ url | prepend: site.baseurl }}">{{ category | first }}</a></li>
+          <!-- <li class="item"><a href="{{ category.url | prepend: site.baseurl }}"><i class="fa fa-home fa-lg"></i><span>{{ category.title }}</span></a></li> -->
+          <!-- <li class="item is-active"><a href="#"><i class="fa fa-code fa-lg"></i><span>Frontend</span></a></li>
+          <li class="item"><a href="#"><i class="fa fa-gamepad fa-lg"></i><span>Games</span></a></li>
+          <li class="item"><a href="#"><i class="fa fa-music fa-lg"></i><span>Music</span></a></li> -->
         {% endfor %}
       </ul>
     </nav>

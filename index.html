@@ -2,22 +2,29 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% for post in site.posts %}
+  <a href="{{ post.url | prepend: site.baseurl }}" class="post">
+    {% if post.image %}
+      <div class="article-header show-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ post.image }});">
+    {% else %}
+      <div class="article-header">
+    {% endif %}
+      <h1>{{ post.title }}</h1>
+      <div class="legenda">
+        {% if post.tags %}
+          <p class="tags">
+            {% for tag in post.tags %}
+              {% if forloop.last == false %}
+                {{ tag }},
+              {% else %}
+                {{ tag }}
+              {% endif %}
+            {% endfor %}
+          </p>
+          {{ post.excerpt | strip_html }}
+        {% endif %}
+        <p>Posted on <time datetime="{{ post.date | date: "%D" }}">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+      </div>
+    </div>
+  </a>
+{% endfor %}
