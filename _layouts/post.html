@@ -1,15 +1,25 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<article>
+  <header class="article-header">
+    <h1>{{ page.title }}</h1>
+    <div class="legenda">
+      {% if page.tags %}
+        <p class="tags">
+          {% for tag in page.tags %}
+            {% if forloop.last == false %}
+              {{ tag }},
+            {% else %}
+              {{ tag }}
+            {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
+      <p>Posted on <time datetime="{{ page.date | date: "%D" }}">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    </div>
   </header>
-
-  <article class="post-content">
+  <div class="article-main">
     {{ content }}
-  </article>
-
-</div>
+  </div>
+</article>
