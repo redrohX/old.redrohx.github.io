@@ -9,6 +9,7 @@ tags:
   - CSS
   - variables
   - colors
+image: /images/photos/circle-color-splash.jpg
 permalink: naming-sass-color-variables.html
 ---
 Does anyone else have trouble naming their color variables in Sass? I can't be the only one who has trouble naming variables of more than three different versions of a similar color.

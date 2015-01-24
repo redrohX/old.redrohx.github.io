@@ -7,6 +7,9 @@ categories:
 tags:
   - Sass maps
   - Button Library
+excerpt: Last night I was browsing through Hugo Giraudel's excellent website, which is a great resource for a lot of uncommon Sass info...
+image: /images/photos/europe-map.jpg
+
 ---
 Last night I was browsing through Hugo Giraudel's excellent website,
 which is a great resource for a lot of uncommon Sass info.
