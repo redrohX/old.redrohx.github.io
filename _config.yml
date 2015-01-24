@@ -13,3 +13,6 @@ exclude: [original/]
 
 # Build settings
 markdown: kramdown
+
+# Outputting
+permalink:     /:title.html
