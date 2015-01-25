@@ -24,48 +24,39 @@ sass:
 # Prose.io
 prose:
   rooturl: '_posts'
-  siteurl: 'http://nielsvanrongen.com'
-  media: '/images/photos'
-  ignore:
-    - index.html
-    - _config.yml
-    - about.md
-    - CNAME
-    - feed.xml
-    - /_layouts
-    - /_includes
-    - /_sass
-    - /css
-    - /fonts
-    - /js
-    - /original
+  siteurl: 'http://nielsvanrongen.com/'
+  media: 'images/photos/'
   metadata:
     _posts:
-      - name: "title"
+      - name: "category"
         field:
-          element: "text"
-          label: "title"
+          element: "hidden"
+          value: "blog"
       - name: "layout"
         field:
           element: "hidden"
           value: "post"
-      - name: "date"
+      - name: "title"
         field:
           element: "text"
-          label: "Date (YYYY-MM-DD HH:MM:SS)"
-          placeholder: "2015-01-24 21:01:14"
-      - name: "categories"
+          label: "Title"
+          value: ""
+      - name: "splash"
         field:
-          element: "select"
-          label: "category"
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
           options:
-            - name: "Front-end"
-              value: "front-end"
-            - name: "Videogames"
-              value: "videogames"
-            - name: "Music"
-              value: "music"
-        - name: "tags"
-          field:
-            element: "text"
-            label: "tags"
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"
