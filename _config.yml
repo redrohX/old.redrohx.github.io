@@ -21,23 +21,51 @@ permalink:     /:title.html
 sass:
   style:  :compressed
 
-# Prose
+# Prose.io
 prose:
   rooturl: '_posts'
-  siteurl: 'http://redrohx.github.io/'
-  media: 'images/photos'
+  siteurl: 'http://nielsvanrongen.com'
+  media: '/images/photos'
   ignore:
-    - index.md
+    - index.html
     - _config.yml
+    - about.md
+    - CNAME
+    - feed.xml
     - /_layouts
     - /_includes
-    _posts/static:
+    - /_sass
+    - /css
+    - /fonts
+    - /js
+    - /original
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
       - name: "layout"
         field:
           element: "hidden"
-          value: "page"
-      - name: "permalink"
+          value: "post"
+      - name: "date"
         field:
           element: "text"
-          label: "Permalink"
-          value: ""
+          label: "Date (YYYY-MM-DD HH:MM:SS)"
+          placeholder: "2015-01-24 21:01:14"
+      - name: "categories"
+        field:
+          element: "select"
+          label: "category"
+          options:
+            - name: "Front-end"
+              value: "front-end"
+            - name: "Videogames"
+              value: "videogames"
+            - name: "Music"
+              value: "music"
+        - name: "tags"
+          field:
+            element: "text"
+            label: "tags"
