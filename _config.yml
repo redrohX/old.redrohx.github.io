@@ -41,6 +41,11 @@ prose:
           element: "text"
           label: "Title"
           value: ""
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date (YYYY-MM-DD HH:MM:SS)"
+          value: "2015-01-01 6:06:06"
       - name: "splash"
         field:
           element: "text"
