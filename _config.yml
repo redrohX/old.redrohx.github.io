@@ -16,3 +16,7 @@ markdown: kramdown
 
 # Outputting
 permalink:     /:title.html
+
+# Sass
+sass:
+  style:  :compressed
