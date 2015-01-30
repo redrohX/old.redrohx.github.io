@@ -9,21 +9,25 @@ layout: default
     {% else %}
       <div class="article-header">
     {% endif %}
-      <h1>{{ post.title }}</h1>
-      <div class="legenda">
-        {% if post.tags %}
-          <p class="tags">
-            {% for tag in post.tags %}
-              {% if forloop.last == false %}
-                {{ tag }},
-              {% else %}
-                {{ tag }}
-              {% endif %}
-            {% endfor %}
-          </p>
-          {{ post.excerpt | strip_html }}
-        {% endif %}
-        <p>Posted on <time datetime="{{ post.date | date: "%D" }}">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+      <div class="page-info-wrapper">
+        <h1>{{ post.title }}</h1>
+        <div class="legenda">
+          {% if post.tags %}
+            <p class="tags">
+              {% for tag in post.tags %}
+                {% if forloop.last == false %}
+                  {{ tag }},
+                {% else %}
+                  {{ tag }}
+                {% endif %}
+              {% endfor %}
+            </p>
+            <p>
+              {{ post.excerpt | strip_html }}
+            </p>
+          {% endif %}
+          <p>Posted on <time datetime="{{ post.date | date: "%D" }}">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+        </div>
       </div>
     </div>
   </a>

@@ -1,12 +1,10 @@
 .page-footer {
   background: $c-brand;
   color: $c-white;
-  padding: 20px;
-  font-size: 0.75em;
-  font-weight: 300;
+  padding: 1.3em;
 }
 
 .copyright {
-  max-width: $max-width;
   margin: 0 auto;
+  @extend %font-small;
 }

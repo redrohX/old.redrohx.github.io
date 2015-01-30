@@ -7,6 +7,7 @@ layout: default
   {% else %}
     <header class="article-header">
   {% endif %}
+  <div class="page-info-wrapper">
       <h1>{{ page.title }}</h1>
       <div class="legenda">
         {% if page.tags %}
@@ -22,6 +23,7 @@ layout: default
         {% endif %}
         <p>Posted on <time datetime="{{ page.date | date: "%D" }}">{{ page.date | date: "%b %-d, %Y" }}</time></p>
       </div>
+    </div>
     </header>
   <div class="article-main">
     {{ content }}

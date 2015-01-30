@@ -17,14 +17,14 @@ I'm a front-end developer and should at least have a site without a default them
 working on my own blog theme, with the intend to port it to either Ghost or Jekyll. I ended up with the latter, since
 this will also save me some time and money on hosting.
 
-## Write, write!
+### Write, write!
 So with a blog comes the responsibility to keep it up to date. Knowning myself I really need to be motivated
 to start writing regularly. I have the intention, but sometimes life just keeps me away from these things.
 
 Topics I plan to write about are front-end development in the form of Sass/CSS, the occasional piece about videogames and possibly
 about music. You might not like one of these topics, but hey... it's my blog, so start your own if you don't like it.
 
-## Updates
+### Updates
 I realize this theme is not 100% finished yet. It doesn't really support old browsers yet, performance can be improved and
 I might rewrite some of the Sass. You know, this is a work in progress and also a way to experiment a bit. Knowing me I
 might change the theme more than writing blog posts.

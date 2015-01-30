@@ -1,8 +1,8 @@
 $w-small: 0px;
-$w-medium: 900px;
+$w-medium: 50em;
 $w-large: 1024px;
 
-$max-width: 900px;
+$max-width: $w-medium;
 
 $colors: (
   mineshaft: #272727,
@@ -11,9 +11,9 @@ $colors: (
   matisse: #16829B,
 );
 
-$c-base: color(mineshaft);
+$c-base:  color(mineshaft);
 $c-brand: color(thunderbird);
 $c-white: color(white);
-$c-blue: color(matisse);
+$c-blue:  color(matisse);
 
 $f-family: 'Open Sans', sans-serif;

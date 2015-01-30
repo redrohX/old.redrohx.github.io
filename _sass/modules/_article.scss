@@ -5,7 +5,7 @@
 }
 
 .article-header {
-  padding: 2em 1em;
+  padding: 2em 1.3em;
   margin: 0 auto;
   background: $c-brand;
 
@@ -24,16 +24,23 @@
     padding: 3.5em 1em;
   }
 
+  .page-info-wrapper {
+    @include mq-medium {
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+
+    @include mq-large {
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+  }
+
   h1 {
     margin: 0;
     font-size: 8vh;
     font-weight: 300;
     color: $c-white;
-
-    @include mq-medium {
-      max-width: $max-width;
-      margin: 0 auto;
-    }
 
     @include mq-large {
       max-width: $max-width;
@@ -44,53 +51,36 @@
   .legenda {
     color: $c-white;
 
-    @include mq-medium {
-      max-width: $max-width;
-      margin: 0 auto;
-    }
-
-    @include mq-large {
-      max-width: $max-width;
-      margin: 0 auto;
-    }
-
     .tags {
       text-transform: lowercase;
     }
 
     p {
-      margin: 0.5em 0;
+      margin: 1.3em 0;
     }
   }
 }
 
 .article-main {
-  max-width: $max-width;
-  margin: 0 auto 50px auto;
+  margin: 1.3em;
 
-  @include mq-large {
-    line-height: 1.8;
+  @include mq-medium {
+    max-width: $max-width;
+    margin: 1.3em auto;
   }
 
-  h1,
-  h2,
-  h3,
-  p,
-  ul,
-  ol {
-    margin: 20px;
-
-    @include mq-large {
-      margin: 20px 0;
-    }
+  @include mq-large {
+    max-width: $max-width;
+    margin: 1.3em auto;
   }
 
   p {
     text-align: justify;
+    margin-bottom: 1.3em;
 
     > code {
       background: lighten($c-base, 75%);
-      padding: 2px;
+      border: 1px solid lighten($c-base, 75%);
     }
   }
 

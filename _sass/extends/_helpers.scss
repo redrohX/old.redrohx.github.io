@@ -16,3 +16,8 @@
 %is-visible {
   display: block;
 }
+
+.font-small,
+%font-small {
+  font-size: 0.707em;
+}
