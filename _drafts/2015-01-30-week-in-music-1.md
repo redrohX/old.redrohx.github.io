@@ -6,9 +6,9 @@ title: Untitled
 date: "2015-01-01 6:06:06"
 ---
 
-Every week I'll take a look at my Last.fm profile and write a post about the music I've been listening to. This week a lot of legendary black-metal bands and new Torche songs.
+Every week I'll take a look at my Last.fm stats and write a post about the music I've been listening to. This week a lot of legendary black-metal bands.
 
-The last week I've been reading the excellent book _Black Metal: Evolution of the Cult by Dayal Patterson_. The book dives deep into the black-metal scene, with tons information and interviews with bands and musicians who were there at the birth of the genre. Most of the black-metal 'lore' isn't new to me, but it's great to finally dive back again. A great book to read if your a metal fan, old and new.
+The last week I've been reading the excellent book _Black Metal: Evolution of the Cult by Dayal Patterson_. The book dives deep into the black-metal scene, with tons information and interviews with bands and musicians who were there at the birth of the genre. Most of the black-metal 'lore' isn't new to me, but it's great to finally dive back in again. A great book to read if your a metal fan, old and new.
 
 Last week I read through the chapters of Mayhem, Thorns and Emperor and suddenly had to urge to listen to their old material again. 
 
